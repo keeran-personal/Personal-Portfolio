@@ -1374,7 +1374,7 @@ footer{
  
  
 /* ================= MOBILE (420px–575px) ================= */
-@media (max-width: 575px){
+@media (max-width: 500px){
  
     html{
         font-size: 87%;
