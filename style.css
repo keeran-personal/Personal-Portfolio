@@ -1549,7 +1549,7 @@ footer{
  
  
 /* ================= SMALL MOBILE (300px-400px) ================= */
-@media (max-width:400px){
+@media (max-width:300px){
  
     html{
         font-size: 82%;
