@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Page Not Found | Keeran R</title>
+<meta name="description" content="The page you're looking for doesn't exist. Head back to Keeran's portfolio home page.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#ee4d1f">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.jpg">
+<link rel="apple-touch-icon" href="assets/images/favicon.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+  .notfound {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 1.5rem 6rem;
+    gap: 1rem;
+  }
+  .notfound__code {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(4rem, 18vw, 9rem);
+    line-height: 1;
+    color: #ee4d1f;
+    margin: 0;
+  }
+  .notfound__title {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    margin: 0;
+  }
+  .notfound__text {
+    max-width: 40ch;
+    opacity: 0.75;
+    margin: 0 0 1rem;
+  }
+  .notfound__home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+    background: #ee4d1f;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .notfound__home svg { width: 1.1rem; height: 1.1rem; }
+</style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<main>
+  <section class="notfound" aria-label="Page not found">
+    <p class="notfound__code" aria-hidden="true">404</p>
+    <h1 class="notfound__title">This page doesn't exist</h1>
+    <p class="notfound__text">The link might be broken, or the page may have moved. Let's get you back on track.</p>
+    <a class="notfound__home" href="/">
+      Back to home
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </a>
+  </section>
+</main>
+
+<div id="footer"></div>
+<div id="fab"></div>
+
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/fab.js"></script>
+</body>
+</html>

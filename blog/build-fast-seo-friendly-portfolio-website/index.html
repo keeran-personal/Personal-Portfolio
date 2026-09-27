@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fast, SEO-Friendly | Keeran R</title>
+<meta name="description" content="A practical guide to building a fast, SEO-optimized portfolio website: semantic HTML, Core Web Vitals, on-page SEO and structured data.">
+<meta name="author" content="Keeran R">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="theme-color" content="#ee4d1f">
+
+<!-- Local / entity SEO -->
+<meta name="geo.region" content="IN-TN">
+<meta name="geo.placename" content="Theni, Tamilnadu">
+<meta name="keywords" content="portfolio website SEO, fast website checklist, semantic HTML SEO, Core Web Vitals checklist, structured data JSON-LD, web developer blog, on-page SEO guide">
+
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.jpg">
+<link rel="apple-touch-icon" href="/assets/images/favicon.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/blog-post.css">
+
+<body>
+
+<!-- preloader: colourful curtain that sweeps away once the page is ready -->
+<div class="preloader" id="preloader" role="status" aria-label="Loading page">
+  <div class="preloader__panel preloader__panel--lilac" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--gold" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--pink" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--orange" aria-hidden="true"></div>
+
+  <div class="preloader__body">
+    <div class="preloader__blobs" aria-hidden="true"></div>
+    <span class="preloader__spark preloader__spark--1" aria-hidden="true">✳</span>
+    <span class="preloader__spark preloader__spark--2" aria-hidden="true">✦</span>
+    <span class="preloader__spark preloader__spark--3" aria-hidden="true">✺</span>
+    <span class="preloader__spark preloader__spark--4" aria-hidden="true">✦</span>
+
+    <div class="preloader__inner">
+      <div class="preloader__name" aria-hidden="true">
+        <span class="preloader__letter">K</span>
+        <span class="preloader__letter">E</span>
+        <span class="preloader__letter">E</span>
+        <span class="preloader__letter">R</span>
+        <span class="preloader__letter">A</span>
+        <span class="preloader__letter">N</span>
+
+      </div>
+      <div class="preloader__bar"><span class="preloader__bar-fill" id="preloaderBar"></span></div>
+      <p class="preloader__hint">loading the fun… <span class="preloader__count"><span id="preloaderCount">0</span>%</span></p>
+    </div>
+  </div>
+</div>
+<noscript><style>.preloader { display: none; }</style></noscript>
+<script src="/assets/js/preloader.js"></script>
+
+<div id="navbar"></div>
+
+<main>
+
+<article class="blogpost">
+  <div class="blogpost__blobs" aria-hidden="true">
+    <span class="blogpost__blob blogpost__blob--1"></span>
+    <span class="blogpost__blob blogpost__blob--2"></span>
+  </div>
+
+  <div class="blogpost__inner">
+
+    <nav class="blogpost__breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/blog/">Blog</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Build a Fast, SEO-Friendly Portfolio Website</span>
+    </nav>
+
+    <div class="blogpost__layout">
+
+      <nav class="blogpost__toc" aria-label="Table of contents" data-reveal>
+        <p class="blogpost__toc-label">On this page</p>
+        <ol>
+          <li><a href="#why-it-matters">Why your portfolio site is your highest-leverage page</a></li>
+          <li><a href="#semantic-html">Start with semantic, accessible HTML</a></li>
+          <li><a href="#performance">Performance is a design decision</a></li>
+          <li><a href="#on-page-seo">On-page SEO that actually moves the needle</a></li>
+          <li><a href="#structured-data">Structured data: teach Google who you are</a></li>
+          <li><a href="#checklist">A Core Web Vitals checklist before you ship</a></li>
+          <li><a href="#mistakes">Mistakes I see most often</a></li>
+        </ol>
+      </nav>
+
+      <div class="blogpost__main">
+
+      <header class="blogpost__head" data-reveal>
+        <span class="blogpost__category clay clay--orange">Web Development</span>
+        <h1 class="blogpost__title">Build a Fast, SEO-Friendly Portfolio Website From Scratch</h1>
+        <p class="blogpost__lead">Semantic HTML, Core Web Vitals and structured data: the unglamorous decisions that actually make a portfolio site fast, accessible and easy for Google (and AI search) to understand.</p>
+
+        <div class="blogpost__meta">
+          <img class="blogpost__meta-avatar" src="/assets/images/me.png" alt="Keeran R" loading="lazy" decoding="async">
+          <div class="blogpost__meta-body">
+            <span class="blogpost__meta-name">Keeran R</span>
+            <span class="blogpost__meta-sub">17 March 2026 <span aria-hidden="true">•</span> 9 min read</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="blogpost__cover" aria-hidden="true">
+        <span class="blogpost__cover-word">BUILD.</span>
+        <span class="blogpost__cover-word blogpost__cover-word--accent">SHIP.</span>
+        <span class="blogpost__cover-word">RANK.</span>
+      </div>
+
+      <div class="blogpost__body" data-reveal>
+
+      <h2 id="why-it-matters">Why your portfolio site is your highest-leverage page</h2>
+      <p>Of every page I've ever shipped, my own portfolio gets the least "creative freedom" and the most scrutiny. A client's landing page has to convert; my portfolio has to prove I can be trusted to build that landing page in the first place. Recruiters, founders and other developers all check the same three things in the first ten seconds: does it load instantly, does it feel considered, and does it show up when someone searches your name. Get those right and the rest of the site can do the talking.</p>
+      <p>That's really what this post is about. Not the fun animation ideas, but the unglamorous groundwork underneath them: markup, performance, metadata. Everything else is decoration on top of that.</p>
+
+      <h2 id="semantic-html">Start with semantic, accessible HTML</h2>
+      <p>Before I touch a single line of CSS, I sketch the page as plain HTML: headings, landmarks, lists, buttons that are actual <code>&lt;button&gt;</code> elements instead of a div with an onclick stuck on it. Div soup is an accessibility problem and an SEO problem at the same time, because search engines (and increasingly, AI answer engines) lean heavily on document structure to work out what a page is actually about.</p>
+      <p>A few rules I try not to break:</p>
+      <ul>
+        <li>Exactly one <code>&lt;h1&gt;</code> per page that says, in plain language, what the page is actually for. Not a decorative headline, the real one, even if it's visually hidden.</li>
+        <li>Headings nest in order (<code>h1 → h2 → h3</code>) instead of jumping levels for a font-size shortcut.</li>
+        <li><code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> mark the actual regions of the page, not just styled divs.</li>
+        <li>Every interactive element gets a real, descriptive <code>aria-label</code> or visible text. "Click here" tells a screen reader (and a search crawler) nothing useful.</li>
+      </ul>
+      <blockquote>Search engines can't see your design. They read your markup and infer everything else.</blockquote>
+
+      <h2 id="performance">Performance is a design decision</h2>
+      <p>I don't treat speed as a checklist to run at the end. It's a series of small choices made while you're building, and there are three places I pay attention to on every project:</p>
+      <h3>Images</h3>
+      <p>Ship <code>.webp</code>, set explicit <code>width</code>/<code>height</code> so the browser can reserve space before the image loads (no layout shift), use <code>loading="lazy"</code> on anything below the fold, and <code>fetchpriority="high"</code> on the one hero image that actually needs to appear first.</p>
+      <h3>Fonts</h3>
+      <p>Google Fonts is convenient, but every extra weight you request is extra render-blocking time. I preconnect to <code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>, then load only the specific weights I'll actually use, not the whole family.</p>
+      <h3>JavaScript</h3>
+      <p>A single scroll-triggered animation doesn't need a heavyweight framework. I reach for something like anime.js or GSAP only when the interaction earns it, and I load third-party scripts (chat widgets, analytics) after the page is interactive, not before.</p>
+
+      <h2 id="on-page-seo">On-page SEO that actually moves the needle</h2>
+      <p>Structured data and clever tricks get a lot of attention, but most of the ranking work happens in five boring tags that people forget to customize per page:</p>
+      <ul>
+        <li><strong>Unique title and description on every page.</strong> Copy-pasting your homepage's meta description onto your contact page tells Google the two pages are interchangeable. They aren't.</li>
+        <li><strong>A canonical URL</strong> on every page, even ones that don't need it yet, so you never accidentally get penalized for duplicate content later.</li>
+        <li><strong>Open Graph and Twitter card tags</strong> so links shared on WhatsApp, LinkedIn or X render an image and description instead of a bare URL.</li>
+        <li><strong>Descriptive, human-readable URLs.</strong> Something like <code>/blog/build-fast-seo-friendly-portfolio-website/</code> tells a reader (and a crawler) what the page's about before they even click.</li>
+        <li><strong>Internal links</strong> between related pages. This post links back to my <a href="/blog/">blog</a> and my <a href="/contact/">contact page</a>, which helps readers and crawlers both understand how the site fits together.</li>
+      </ul>
+
+      <h2 id="structured-data">Structured data: teach Google (and AI) who you are</h2>
+      <p>JSON-LD structured data doesn't change how a page looks, but it removes the guesswork for machines reading it. It's how I tell a crawler, explicitly, "this is a Person, this is their job title, this is the Organization they work for" instead of hoping it infers that correctly from prose. A minimal example for a personal site:</p>
+      <pre><code>{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Your Name",
+  "url": "https://yoursite.com/",
+  "jobTitle": "Web Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/yourprofile/",
+    "https://github.com/yourhandle"
+  ]
+}</code></pre>
+      <p>Add a <code>BreadcrumbList</code> on every non-home page, and, if your site answers common questions, an <code>FAQPage</code> block that mirrors what's actually on the page. Never mark up content that isn't shown to visitors. It's against Google's structured data guidelines, and it can get your rich result pulled entirely.</p>
+
+      <h2 id="checklist">A Core Web Vitals checklist before you ship</h2>
+      <ul class="blogpost__checklist">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Largest Contentful Paint under about 2.5s. It's usually your hero image or heading, so preload it.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Cumulative Layout Shift near zero. Reserve space for images, ads and web fonts before they load in.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Interaction to Next Paint under 200ms. Keep your main thread free of long-running scripts.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Mobile-first: test on an actual mid-range phone, not just Chrome DevTools' emulator.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Run PageSpeed Insights and Search Console's URL Inspection tool after every major change, not just once at launch.</span>
+        </li>
+      </ul>
+
+      <h2 id="mistakes">Mistakes I see most often</h2>
+      <p>Almost every slow or invisible portfolio site I've audited has the same handful of problems. A hero video or an unoptimized PNG loaded at full resolution. A title tag that's just the person's name and nothing else. No canonical tag at all. Animations that block the main thread on first load. None of it is hard to fix. It's just easy to forget when you're busy making the site look good.</p>
+      <p>Build the boring parts first. The fun parts are more fun when they're sitting on something fast.</p>
+
+    </div>
+
+      </div>
+
+      <aside class="blogpost__side">
+        <div class="blogpost__author" data-reveal>
+          <img src="/assets/images/me.png" alt="Jeeshma Prakash" loading="lazy" decoding="async">
+          <span class="blogpost__author-label">Written by</span>
+          <p class="blogpost__author-name">Keeran R</p>
+          <p class="blogpost__author-bio">Full Stack developer, Web designer, Freelancer and Learning, based in Tamilnadu, India.</p>
+          <div class="blogpost__author-socials">
+            <a class="menu__social" href="https://www.instagram.com/heartstealer._wizard/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a class="menu__social" href="https://www.linkedin.com/in/keeran-r-personal/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14.8H.2V8zm7.6 0h4.4v2h.06c.62-1.16 2.12-2.4 4.36-2.4 4.66 0 5.52 3.06 5.52 7.04v8.16h-4.6v-7.24c0-1.72-.04-3.94-2.4-3.94-2.4 0-2.78 1.88-2.78 3.82v7.36H7.8V8z"/></svg>
+            </a>
+          </div>
+          <a class="blogpost__author-link" href="/contact/">
+            Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <div class="blogpost__cta" data-reveal>
+      <p>Got a project brewing?</p>
+      <a href="/contact/">
+        Let's talk
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <p class="blogpost__back"><a href="/blog/">← Back to all posts</a></p>
+
+  </div>
+</article>
+
+</main>
+
+<div id="footer"></div>
+<div id="fab"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="/assets/js/smooth-scroll.js"></script>
+<script src="/assets/js/reveal.js"></script>
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/footer.js"></script>
+<script src="/assets/js/fab.js"></script>
+</body>
+</html>

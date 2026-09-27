@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog on full Stack | Keeran R</title>
+<meta name="description" content="Practical notes on full-stack development, web design and startups, written by Keeran — Tamilnadu-based developer and Learning.">
+<meta name="author" content="Keeran R">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="theme-color" content="#ee4d1f">
+
+<!-- Local / entity SEO -->
+<meta name="geo.region" content="IN-TN">
+<meta name="geo.placename" content="Theni, Tamilnadu">
+<meta name="keywords" content="Keeran R blog, full-stack development blog, web design tips, portfolio website SEO, front-end development Tamilnadu, startup lessons, Learning blog">
+
+
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.jpg">
+<link rel="apple-touch-icon" href="/assets/images/favicon.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/blog.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://jeeshma.prception.in/blog/#blog",
+      "url": "https://jeeshma.prception.in/blog/",
+      "name": "Jeeshma Prakash's Blog",
+      "description": "Practical notes on web development, UI/UX design and building startups, written by Jeeshma Prakash.",
+      "inLanguage": "en-IN",
+      "isPartOf": { "@id": "https://jeeshma.prception.in/#website" },
+      "author": { "@type": "Person", "name": "Jeeshma Prakash", "url": "https://jeeshma.prception.in/" },
+      "publisher": { "@type": "Person", "name": "Jeeshma Prakash", "url": "https://jeeshma.prception.in/" },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://jeeshma.prception.in/blog/build-fast-seo-friendly-portfolio-website/",
+          "headline": "Build a Fast, SEO-Friendly Portfolio Website",
+          "url": "https://jeeshma.prception.in/blog/build-fast-seo-friendly-portfolio-website/",
+          "datePublished": "2026-08-28"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jeeshma.prception.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jeeshma.prception.in/blog/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- preloader: colourful curtain that sweeps away once the page is ready -->
+<div class="preloader" id="preloader" role="status" aria-label="Loading page">
+  <div class="preloader__panel preloader__panel--lilac" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--gold" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--pink" aria-hidden="true"></div>
+  <div class="preloader__panel preloader__panel--orange" aria-hidden="true"></div>
+
+  <div class="preloader__body">
+    <div class="preloader__blobs" aria-hidden="true"></div>
+    <span class="preloader__spark preloader__spark--1" aria-hidden="true">✳</span>
+    <span class="preloader__spark preloader__spark--2" aria-hidden="true">✦</span>
+    <span class="preloader__spark preloader__spark--3" aria-hidden="true">✺</span>
+    <span class="preloader__spark preloader__spark--4" aria-hidden="true">✦</span>
+
+    <div class="preloader__inner">
+      <div class="preloader__name" aria-hidden="true">
+        <span class="preloader__letter">K</span>
+        <span class="preloader__letter">E</span>
+        <span class="preloader__letter">E</span>
+        <span class="preloader__letter">R</span>
+        <span class="preloader__letter">A</span>
+        <span class="preloader__letter">N</span>
+      </div>
+      <div class="preloader__bar"><span class="preloader__bar-fill" id="preloaderBar"></span></div>
+      <p class="preloader__hint">loading the fun… <span class="preloader__count"><span id="preloaderCount">0</span>%</span></p>
+    </div>
+  </div>
+</div>
+<noscript><style>.preloader { display: none; }</style></noscript>
+<script src="/assets/js/preloader.js"></script>
+
+<div id="navbar"></div>
+
+<main>
+
+<!-- blog listing page: featured post card + upcoming-posts grid -->
+<section class="blogpage" id="blog">
+  <div class="blogpage__blobs" aria-hidden="true">
+    <span class="blogpage__blob blogpage__blob--1"></span>
+    <span class="blogpage__blob blogpage__blob--2"></span>
+    <span class="blogpage__blob blogpage__blob--3"></span>
+  </div>
+  <div class="blogpage__ring" aria-hidden="true"></div>
+  <div class="blogpage__deco" aria-hidden="true">
+    <span class="deco blogpage__spark blogpage__spark--1">✦</span>
+    <span class="deco blogpage__spark blogpage__spark--2">✳</span>
+    <span class="deco blogpage__spark blogpage__spark--3">✺</span>
+    <span class="deco blogpage__spark blogpage__spark--4">✦</span>
+  </div>
+
+  <div class="blogpage__head" data-reveal>
+    <span class="blogpage__kicker">Thoughts &amp; Tutorials</span>
+    <h1 class="blogpage__title">Blog</h1>
+    <p class="blogpage__lead">Notes on full-stack development, web design and building things from scratch, written between client projects and late-night curiosity.</p>
+  </div>
+
+  <a class="blogpage__featured" data-reveal="pop" href="/blog/build-fast-seo-friendly-portfolio-website/">
+    <div class="blogpage__featured-cover" aria-hidden="true">
+      <span class="blogpage__featured-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13.2 2.5 5.5 13h4.6l-1.3 8.5L16.5 10h-4.6l1.3-7.5z"/></svg>
+        Featured
+      </span>
+      <span class="blogpage__featured-word">BUILD.</span>
+      <span class="blogpage__featured-word">SHIP.</span>
+      <span class="blogpage__featured-word">RANK.</span>
+    </div>
+    <div class="blogpage__featured-body">
+      <span class="blogpage__card-tag clay clay--orange">Web Development</span>
+      <h2 class="blogpage__featured-title">Build a Fast, SEO-Friendly Portfolio Website From Scratch</h2>
+      <p class="blogpage__featured-excerpt">A practical, no-fluff walkthrough of the decisions that actually make a portfolio site fast, accessible and easy for Google to understand: semantic HTML, Core Web Vitals, structured data.</p>
+      <div class="blogpage__card-meta">
+        <span>17 March 2026</span>
+        <span aria-hidden="true">•</span>
+        <span>9 min read</span>
+      </div>
+      <span class="blogpage__card-link">
+        Read the guide
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </span>
+    </div>
+  </a>
+
+  <p class="blogpage__grid-head" data-reveal>coming up next…</p>
+
+  <div class="blogpage__grid" data-reveal>
+    <article class="blogpage__card">
+      <span class="blogpage__card-soon">Coming soon</span>
+      <span class="blogpage__card-tag clay clay--pink">Web Design</span>
+      <h3 class="blogpage__card-title">Designing Interfaces People Actually Enjoy Using</h3>
+      <p class="blogpage__card-excerpt">The small, unglamorous decisions (spacing, motion, copy) that separate a functional interface from a delightful one.</p>
+    </article>
+
+    <article class="blogpage__card">
+      <span class="blogpage__card-soon">Coming soon</span>
+      <span class="blogpage__card-tag clay clay--lilac">Freelancer</span>
+      <h3 class="blogpage__card-title">Lessons From Self an Startup</h3>
+      <p class="blogpage__card-excerpt">What building  Learning taught me about shipping fast, hiring well and staying sane.</p>
+    </article>
+
+    <article class="blogpage__card">
+      <span class="blogpage__card-soon">Coming soon</span>
+      <span class="blogpage__card-tag clay clay--gold">Full-Stack</span>
+      <h3 class="blogpage__card-title">React vs. Plain JavaScript: Choosing the Right Tool</h3>
+      <p class="blogpage__card-excerpt">A framework isn't always the answer. How I decide what a project actually needs before writing a line of code.</p>
+    </article>
+  </div>
+
+  <div class="blogpage__cta" data-reveal>
+    <p class="blogpage__cta-text">Got a topic you'd <span>love</span> to see covered?</p>
+    <a class="blogpage__cta-link" href="/contact/">
+      Send a request
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<div id="footer"></div>
+<div id="fab"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="/assets/js/smooth-scroll.js"></script>
+<script src="/assets/js/reveal.js"></script>
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/footer.js"></script>
+<script src="/assets/js/fab.js"></script>
+</body>
+</html>
