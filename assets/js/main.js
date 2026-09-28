@@ -12,7 +12,7 @@
   var dots = Array.prototype.slice.call(document.querySelectorAll('.hero__dot'));
 
   var slides = [
-    { key: 's1', role: 'FRONTEND DEV',      src: 'assets/images/Entrepreneur.png' },
+    { key: 's1', role: 'FRONTEND DEVELOPER',      src: 'assets/images/Entrepreneur.png' },
     { key: 's2', role: 'FREELANCE',            src: 'assets/images/Mentor.png' },
     { key: 's3', role: 'BACKEND DEVELOPER',   src: 'assets/images/ContentCreator.png'},
     { key: 's4', role: 'WEB DEVELOPER',     src: 'assets/images/developer.png'}
